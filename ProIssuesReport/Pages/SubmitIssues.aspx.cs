@@ -44,4 +44,9 @@ public partial class Pages_SubmitIssues : System.Web.UI.Page
             Response.Redirect(url: "IssueRedirect.aspx");
         }
     }
+
+    protected void IssueStatusTextBox_TextChanged(object sender, EventArgs e)
+    {
+
+    }
 }

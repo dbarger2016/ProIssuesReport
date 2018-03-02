@@ -25,22 +25,34 @@ public partial class Pages_ViewReport : System.Web.UI.Page
             conn.Open();
 
             //SQL Query to add data to fields
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM ReportTable WHERE ErrorDate BETWEEN '"
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM SubmitIssuesTable WHERE IssueDate BETWEEN '"
                                                     + ReportDateFromTextBox.Text + "' AND '" + ReportDateToTextBox.Text + "'", conn);
 
-            //SqlDataAdapter sda = new SqlDataAdapter("SELECT ReportTable.ErrorName, ReportTable.ErrorDescription,        ReportTable.ErrorReporter, ReportTable.ErrorDate, ResponderTable.ResponderName, ResponderTable.ResponderDetails, ResponderTable.ResponderTime FROM ReportTable RIGHT JOIN ResponderTable ON ReportTable.ResponderId = ResponderTable.ResponderId WHERE ErrorDate BETWEEN '" + ReportDateFromTextBox.Text + "' AND '" + ReportDateToTextBox.Text + "'", conn);
+            //SqlDataAdapter sda = new SqlDataAdapter("SELECT ReportTable.ErrorName, ReportTable.ErrorDescription, ReportTable.ErrorReporter, ReportTable.ErrorDate, ResponderTable.ResponderName, ResponderTable.ResponderDetails, ResponderTable.ResponderTime FROM ReportTable RIGHT JOIN ResponderTable ON ReportTable.ResponderId = ResponderTable.ResponderId WHERE ErrorDate BETWEEN '" + ReportDateFromTextBox.Text + "' AND '" + ReportDateToTextBox.Text + "'", conn);
 
 
             //Create Dataset and GridView Table
             DataSet ds = new DataSet();
-            DataSet nds = new DataSet();
-            sda.Fill(ds, "ReportTable");
-            sda.Fill(nds, "ResponderTable");
-            ReportGridView.DataSource = ds.Tables["ReportTable"];
-            ReportGridView.DataSource = nds.Tables["ResponderTable"];
+            //DataSet nds = new DataSet();
+            sda.Fill(ds, "SubmitIssuesTable");
+            //sda.Fill(nds, "ResponderTable");
+            ReportGridView.DataSource = ds.Tables["SubmitIssuesTable"];
+            //ReportGridView.DataSource = nds.Tables["ResponderTable"];
             ReportGridView.DataBind();
-            ReportGridView.DataBind();
+
+            SqlCommand Countcmd = new SqlCommand
+            {
+                CommandText = "SELECT Count(*) FROM SubmitIssuesTable",
+                Connection = conn
+            };
+
+            FlagCountTextBox.Text = Countcmd.ExecuteScalar().ToString();
             conn.Close();
         }
+
+
+
     }
+
+
 }

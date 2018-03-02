@@ -5,8 +5,8 @@
 <html>
 <head runat="server">
 
-    <!-- Master Page Title 
-    <title>Master Page</title> -->
+     
+    <title></title>
 
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -20,7 +20,6 @@
             <li><a href="SubmitIssues.aspx">Report Issue</a></li>
             <li><a href="IssuesTable.aspx">View Issues</a></li>
             <li><a href="ResponderPortal.aspx">ResponderPortal</a></li>
-            <li><a href="BuildProReport.aspx">Build Report</a></li>
             <li><a href="ViewReport.aspx">View Report</a></li>
          </ul>
       </nav>
