@@ -18,7 +18,7 @@
             <!-- DateReportedTextBox Validation -->
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Date Field Is Empty!"
                                         ControlToValidate="IssueDateFromTextBox" Display="Dynamic" ForeColor="Red"
-                                        ToolTip="Please Select or Enter A Start Date!" maxLength="10"></asp:RequiredFieldValidator>
+                                        ToolTip="Please Select or Enter A Start Date!"></asp:RequiredFieldValidator>
             <!-- End of Validation -->
          </div>
           </div>
@@ -39,7 +39,7 @@
          <!-- DateReportedTextBox Validation -->
          <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Date Field Is Empty!"
                                      ControlToValidate="IssueDateToTextBox" Display="Dynamic" ForeColor="Red"
-                                     ToolTip="Please Select or Enter An End Date!" maxLength="10"></asp:RequiredFieldValidator>
+                                     ToolTip="Please Select or Enter An End Date!"></asp:RequiredFieldValidator>
          <!-- End of Validation -->
       </div>
        </div>

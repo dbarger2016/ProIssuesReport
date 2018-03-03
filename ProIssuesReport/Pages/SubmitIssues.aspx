@@ -40,7 +40,7 @@
         </div>
         <div class="divRow">
             <div class="divColumn">
-                <asp:textbox id="IssueDescriptionTextBox" runat="server" textmode="MultiLine" placeholder="Description"
+                <asp:textbox id="IssueDescriptionTextBox" runat="server" textmode="MultiLine"
                     width="512px" height="128px" maxlength="300" causesvalidation="True"></asp:textbox>
                 <!-- IssueDescriptionTextBox Validation -->
                 <asp:requiredfieldvalidator id="RequiredFieldValidator2" runat="server" errormessage="Text Field Is Empty!"
@@ -63,7 +63,7 @@
         </div>
         <div class="divRow">
             <div class="divColumn">
-                <asp:textbox id="ReporterNameTextBox" runat="server" placeholder="Reported By?" width="256px"
+                <asp:textbox id="ReporterNameTextBox" runat="server" width="256px"
                     maxlength="50" causesvalidation="True"></asp:textbox>
                 <!-- ReporterNameTextBox Validation -->
                 <asp:requiredfieldvalidator id="RequiredFieldValidator3" runat="server" errormessage="Text Field Is Empty!"
@@ -91,7 +91,7 @@
                 <!-- DateReportedTextBox Validation -->
                 <asp:requiredfieldvalidator id="RequiredFieldValidator4" runat="server" errormessage="Date Field Is Empty!"
                     controltovalidate="DateReportedTextBox" display="Dynamic" forecolor="Red"
-                    tooltip="Please Select or Enter A Date!" maxlength="10"></asp:requiredfieldvalidator>
+                    tooltip="Please Select or Enter A Date!"></asp:requiredfieldvalidator>
                 <!-- End of Validation -->
             </div>
         </div>

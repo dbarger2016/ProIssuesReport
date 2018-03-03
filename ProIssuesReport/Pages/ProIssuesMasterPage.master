@@ -5,8 +5,8 @@
 <html>
 <head runat="server">
 
-     
     <title></title>
+
     <link rel="stylesheet" type="text/css" href="Styles/mpNav.css">
 
     <asp:ContentPlaceHolder id="head" runat="server">

@@ -11,12 +11,10 @@
 
    <!--Start Div Table For Input Controls -->
    <div id="content" class="divTable">
-      <asp:Panel ID="Panel1" runat="server" Height="40%" Width="50%">
          <div class="divRow">
             <div class="divColumn">
                <asp:DropDownList ID="IssueSelectDD" ClientIDMode="Static" runat="server" AutoPostBack="true" Height="21px"
                   Width="203px" OnSelectedIndexChanged="IssueList_Click" AppendDataBoundItems="true">
-                 
                </asp:DropDownList>
             </div>
          </div>
@@ -26,7 +24,7 @@
          <div class="divRow">
             <div class="divColumn">
 
-               <asp:GridView ID="GridViewDrop" runat="server" AutoGenerateColumns="false" AllowSorting="true" AllowPaging="true" EnableViewState="true">
+               <asp:GridView ID="GridViewDrop" runat="server" AutoGenerateColumns="false">
                   <Columns>
                      <asp:BoundField DataField="IssueId" HeaderText="Issue ID" SortExpression="IssueId" />
                      <asp:BoundField DataField="IssueName" HeaderText="Issue Name" SortExpression="IssueName" />
@@ -43,7 +41,6 @@
          <div class="divRow">
             <div class="divColumn">&nbsp</div>
          </div>
-      </asp:Panel>
 
       <div class="divRow">
          <div class="divColumn">
