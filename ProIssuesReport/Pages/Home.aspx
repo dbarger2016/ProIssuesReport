@@ -2,9 +2,6 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-
-   <!-- Home Page Title
-   <title>Home</title> -->
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
    

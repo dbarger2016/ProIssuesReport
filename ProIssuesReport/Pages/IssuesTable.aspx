@@ -14,7 +14,7 @@
    <div id="content" class="divTable">
       <div class="divRow">
          <div class="divColumn">
-            <asp:TextBox ID="IssueDateFromTextBox" TextMode="Date" runat="server" CausesValidation="True" MaxLength="10"></asp:TextBox>
+            <asp:TextBox ID="IssueDateFromTextBox" TextMode="Date" runat="server" CausesValidation="true" MaxLength="10"></asp:TextBox>
             <!-- DateReportedTextBox Validation -->
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Date Field Is Empty!"
                                         ControlToValidate="IssueDateFromTextBox" Display="Dynamic" ForeColor="Red"
