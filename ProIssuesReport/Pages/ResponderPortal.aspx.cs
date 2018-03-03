@@ -117,5 +117,11 @@ public partial class Pages_ResponderPortal : System.Web.UI.Page
     }
     //New Function for Status Click DDL
     //UPDATE SubmitIssuesTable for IssueStatus - (default selection = current value)
+    protected void UpdateStatus_Click(object sender, EventArgs e)
+    {
+        if (this.IsPostBack)
+        {
 
+        }
+    }
 }

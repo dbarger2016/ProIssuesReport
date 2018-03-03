@@ -24,7 +24,7 @@
           </div>
          <div class="divRow">
             <div class="divColumn"></div>
-            <asp:Label ID="IssueDateFromLabel" runat="server" Text=" Select Date From "></asp:Label>
+             <label id="lblIssueDateFrom">Select Date From:</label>
          </div>
    <div class="divRow">
       <div class="divColum">&nbsp</div>
@@ -42,10 +42,10 @@
                                      ToolTip="Please Select or Enter An End Date!"></asp:RequiredFieldValidator>
          <!-- End of Validation -->
       </div>
-       </div>
+   </div>
       <div class="divRow">
          <div class="divColumn">
-            <asp:Label ID="IssueDateTo" runat="server" Text=" Select Date To "></asp:Label>
+             <label id="lblIssueDateTo">Select Date To:</label>
          </div>
       </div>
       <div class="divRow">

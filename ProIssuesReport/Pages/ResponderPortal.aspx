@@ -44,7 +44,7 @@
 
       <div class="divRow">
          <div class="divColumn">
-            <asp:Label ID="ResponderNameLabel" runat="server" Text="Responder Name:"></asp:Label>
+             <label id="lblResponderName">Responder Name:</label>
          </div>
       </div>
       <div class="divRow">
@@ -61,9 +61,12 @@
             <!-- End of Validation -->
          </div>
       </div>
+             <div class="divRow">
+         <div class="divColumn">&nbsp</div>
+      </div>
       <div class="divRow">
          <div class="divColumn">
-            <asp:Label ID="ResponderDetailsLabel" runat="server" Text="Responder Details:"></asp:Label>
+             <label id="lblResponderDetails">Responder Details:</label>
          </div>
       </div>
       <div class="divRow">
@@ -81,9 +84,12 @@
             <!-- End of Validation -->
          </div>
       </div>
+             <div class="divRow">
+         <div class="divColumn">&nbsp</div>
+      </div>
       <div class="divRow">
          <div class="divColumn">
-            <asp:Label ID="ReponderTimeLabel" runat="server" Text="Response Time (In Hours):"></asp:Label>
+             <label id="lblResponderTime">Response Time (In Hours):</label>
          </div>
       </div>
       <div class="divRow">
@@ -97,9 +103,12 @@
             <!-- End of Validation -->
          </div>
       </div>
+             <div class="divRow">
+         <div class="divColumn">&nbsp</div>
+      </div>
       <div class="divRow">
          <div class="divColumn">
-              <asp:Label ID="IssueIdFKlabel" runat="server" Text="Current Issue ID:"></asp:Label>
+             <label id="lblIssueId_FK">Current Issue ID:</label>
          </div>
       </div>
       <div class="divRow">
@@ -110,14 +119,19 @@
       <div class="divRow">
          <div class="divColumn">&nbsp</div>
       </div>
+       <div class="divRow">
+           <div class="divColumn">
+               <label id="lblNewStatus">Select to Update Status:</label>
+           </div>
+       </div>
       <div class="divRow">
          <div class="divColumn">
-            <!--<asp:DropDownList ID="DropDownList1" runat="server" >  
-               <asp:ListItem ID="OpenLB" runat="server" DataValueField="1" DataTextField="OpenLB" Text="OPEN"></asp:ListItem>
-               <asp:ListItem ID="InProgressLB" runat="server" DataValueField="2" DataTextField="InProgressLB" Text="IN PROGRESS"></asp:ListItem>
-               <asp:ListItem ID="ClosedLB" runat="server" DataValueField="3" DataTextField="ClosedLB" Text="CLOSED"></asp:ListItem>
-               <asp:ListItem ID="CompleteLB" runat="server" DataValueField="4" DataTextField="CompleteLB" Text="COMPLETE"></asp:ListItem>
-            </asp:DropDownList>  -->
+            <asp:DropDownList ID="ddlNewStatus" runat="server" OnSelectedIndexChanged="UpdateStatus_Click" AutoPostBack="True">
+                <asp:ListItem Selected="True">-- Select New Status --</asp:ListItem>
+                <asp:ListItem>OPEN</asp:ListItem>
+                <asp:ListItem>IN PROGRESS</asp:ListItem>
+                <asp:ListItem>CLOSED</asp:ListItem>
+            </asp:DropDownList>
          </div>
       </div>
        <div class="divRow">

@@ -22,7 +22,7 @@
         ControlToValidate="ReportDateFromTextBox" Display="Dynamic" ForeColor="Red"
         ToolTip="Please Select or Enter A Start Date!"></asp:RequiredFieldValidator>
 
-    <asp:Label ID="ReportDateFromLabel" runat="server" Text=" Select Date From "></asp:Label>
+    <label id="lblReportDateFrom">Select Date From:</label>
 
     <!-- Search Dates To: -->
     <asp:TextBox ID="ReportDateToTextBox" TextMode="Date" runat="server" CausesValidation="true"></asp:TextBox>
@@ -31,7 +31,8 @@
         ControlToValidate="ReportDateToTextBox" Display="Dynamic" ForeColor="Red"
         ToolTip="Please Select or Enter An End Date!"></asp:RequiredFieldValidator>
     <!-- End of Validation -->
-    <asp:Label ID="ReportDateTo" runat="server" Text=" Select Date To "></asp:Label>
+
+    <label id="lvlReportDateTo">Select Date To:</label>
 
     <asp:Button ID="ReportDateFromToSubmit" runat="server" Text="Display Report" OnClick="ReportDateRange_Click" />
 
@@ -40,7 +41,7 @@
     </asp:GridView>
 
 
-    <label class="lblFlagCount">Flag Count:</label>
+    <label id="lblFlagCount">Flag Count:</label>
 
     <asp:TextBox ID="FlagCountTextBox" runat="server" Width="25px"></asp:TextBox>
 

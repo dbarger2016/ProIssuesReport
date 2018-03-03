@@ -13,7 +13,7 @@
     <div id="content" class="divTable">
         <div class="divRow">
             <div class="divColumn">
-                <asp:label id="LabelIssueName" runat="server" text="Name of the Issue/Error"></asp:label>
+                <label id="lblIssueName">Name iof the Issue/Error:</label>
             </div>
         </div>
         <div class="divRow">
@@ -35,7 +35,7 @@
         </div>
         <div class="divRow">
             <div class="divColumn">
-                <asp:label id="LabelIssueDescription" runat="server" text="Description/Details of the Issue/Error"></asp:label>
+                <label id="lblIssueDescription">Description/Details of the Issue/Error:</label>
             </div>
         </div>
         <div class="divRow">
@@ -58,7 +58,7 @@
         </div>
         <div class="divRow">
             <div class="divColumn">
-                <asp:label id="LabelReporterName" runat="server" text="Enter your Name"></asp:label>
+                <label id="lblReporterName">Enter Reporter Name:</label>
             </div>
         </div>
         <div class="divRow">
@@ -81,7 +81,7 @@
         </div>
         <div class="divRow">
             <div class="divColumn">
-                <asp:label id="LabelIssueDate" runat="server" text="Date Reported"></asp:label>
+                <label id="lblIsseDate">Date Reported:</label>
             </div>
         </div>
         <div class="divRow">
@@ -100,7 +100,7 @@
         </div>
         <div class="divRow">
             <div class="divColumn">
-                <asp:label id="IssueStatusLabel" runat="server" text="Current Status:"></asp:label>
+                <label id="lblIssueStatus">Current Status:</label>
             </div>
         </div>
         <div class="divRow">
