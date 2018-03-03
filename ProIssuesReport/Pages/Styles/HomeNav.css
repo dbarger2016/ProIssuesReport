@@ -1,0 +1,24 @@
+﻿#navContent {
+    font-size:20px;
+    text-align: center;
+}
+#navContent ul {
+    float: left;
+}
+#navContent li {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+#navContent a {
+    text-decoration: none;
+    color: #000000;
+    width: 100%;
+    padding: inherit;
+}
+
+#navContent a:hover {
+    color: #ffffff;
+    background-color: #026d06;
+}

@@ -12,15 +12,11 @@
 
    <!-- Simple Navigation -->
 
-    <div id="navContent" class="btnNav">
-        <div class="linkTop">
-            <a href="SubmitIssues.aspx">Submit An Issue</a>
-        </div>
-        <div class="linkCenter">
-            <a href="ResponderPortal.aspx">Responder Portal</a>
-        </div>
-        <div class="linkBottom">
-            <a href="ViewReport.aspx">View PRO Reports</a>
-        </div>
+    <div id="navContent">
+        <ul>
+            <li><a href="SubmitIssues.aspx">Submit An Issue</a></li>
+            <li><a href="ResponderPortal.aspx">Responder Portal</a></li>
+            <li><a href="ViewReport.aspx">View PRO Reports</a></li>
+        </ul>
     </div>
 </asp:Content>
