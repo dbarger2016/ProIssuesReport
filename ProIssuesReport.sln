@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ProIssuesReport", "ProIssuesReport\", "{9AB0E917-3493-43BE-A2CD-CC02E74DEF8A}"
 	ProjectSection(WebsiteProperties) = preProject
@@ -24,6 +24,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ProIssuesReport", "ProIssue
 		SlnRelativePath = "ProIssuesReport\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FE508CE2-89E9-4EC9-9F95-0D5418EAE474}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

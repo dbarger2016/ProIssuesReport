@@ -1,10 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Pages/ProIssuesMasterPage.master" AutoEventWireup="true" CodeFile="IssuesTable.aspx.cs" Inherits="Pages_IssuesTable" %>
+﻿<%@ Page Title="View Issues" Language="C#" MasterPageFile="~/Pages/ProIssuesMasterPage.master" AutoEventWireup="true" CodeFile="IssuesTable.aspx.cs" Inherits="Pages_IssuesTable" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-
-   <!-- View Submitted Issues Page Title -->
-   <title>View Issue Table</title>
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
@@ -25,12 +21,11 @@
                                         ToolTip="Please Select or Enter A Start Date!" maxLength="10"></asp:RequiredFieldValidator>
             <!-- End of Validation -->
          </div>
+          </div>
          <div class="divRow">
             <div class="divColumn"></div>
             <asp:Label ID="IssueDateFromLabel" runat="server" Text=" Select Date From "></asp:Label>
          </div>
-      </div>
-   </div>
    <div class="divRow">
       <div class="divColum">&nbsp</div>
    </div>
@@ -47,6 +42,7 @@
                                      ToolTip="Please Select or Enter An End Date!" maxLength="10"></asp:RequiredFieldValidator>
          <!-- End of Validation -->
       </div>
+       </div>
       <div class="divRow">
          <div class="divColumn">
             <asp:Label ID="IssueDateTo" runat="server" Text=" Select Date To "></asp:Label>

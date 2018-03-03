@@ -7,14 +7,14 @@
 
      
     <title></title>
+    <link rel="stylesheet" type="text/css" href="Styles/mpNav.css">
 
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
    <!-- Main Navigation Top-Horizontal -->
-   <div id="NavigationMain">
-      <nav>
+   <div id="nav">
          <ul>
             <li><a href="Home.aspx">Home</a></li>
             <li><a href="SubmitIssues.aspx">Report Issue</a></li>
@@ -22,7 +22,6 @@
             <li><a href="ResponderPortal.aspx">ResponderPortal</a></li>
             <li><a href="ViewReport.aspx">View Report</a></li>
          </ul>
-      </nav>
    </div>
    <br />
 
