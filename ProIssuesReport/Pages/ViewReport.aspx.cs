@@ -25,24 +25,17 @@ public partial class Pages_ViewReport : System.Web.UI.Page
             conn.Open();
 
             //SQL Query to add data to fields
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM SubmitIssuesTable WHERE IssueDate BETWEEN '"
-                                                    + ReportDateFromTextBox.Text + "' AND '" + ReportDateToTextBox.Text + "'", conn);
-
-            //SqlDataAdapter sda = new SqlDataAdapter("SELECT ReportTable.ErrorName, ReportTable.ErrorDescription, ReportTable.ErrorReporter, ReportTable.ErrorDate, ResponderTable.ResponderName, ResponderTable.ResponderDetails, ResponderTable.ResponderTime FROM ReportTable RIGHT JOIN ResponderTable ON ReportTable.ResponderId = ResponderTable.ResponderId WHERE ErrorDate BETWEEN '" + ReportDateFromTextBox.Text + "' AND '" + ReportDateToTextBox.Text + "'", conn);
-
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT SubmitIssuesTable.IssueId, SubmitIssuesTable.IssueName, SubmitIssuesTable.IssueDescription, SubmitIssuesTable.IssueReporter, SubmitIssuesTable.IssueDate, ResponderTable.ResponderName, ResponderTable.ResponderDetails FROM SubmitIssuesTable INNER JOIN ResponderTable ON SubmitIssuesTable.IssueId = ResponderTable.IssueId WHERE IssueDate BETWEEN '"+ ReportDateFromTextBox.Text + "' AND '" + ReportDateToTextBox.Text + "'", conn);
 
             //Create Dataset and GridView Table
             DataSet ds = new DataSet();
-            //DataSet nds = new DataSet();
             sda.Fill(ds, "SubmitIssuesTable");
-            //sda.Fill(nds, "ResponderTable");
             ReportGridView.DataSource = ds.Tables["SubmitIssuesTable"];
-            //ReportGridView.DataSource = nds.Tables["ResponderTable"];
             ReportGridView.DataBind();
 
             SqlCommand Countcmd = new SqlCommand
             {
-                CommandText = "SELECT Count(*) FROM SubmitIssuesTable",
+                CommandText = "SELECT Count(IssueId) FROM SubmitIssuesTable",
                 Connection = conn
             };
 

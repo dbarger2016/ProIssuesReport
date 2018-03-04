@@ -68,7 +68,7 @@ public partial class Pages_ResponderPortal : System.Web.UI.Page
 
         //SQL Query to add data to fields
         SqlDataAdapter sda = new SqlDataAdapter(sqlstring, conn);
-        //WHERE IssueName = '"+ IssueSelectDD.SelectedItem +"'
+
         //Create Dataset and GridView Table
         DataSet ds = new DataSet();
         sda.Fill(ds, "SubmitIssuesTable");

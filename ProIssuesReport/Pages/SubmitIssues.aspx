@@ -105,7 +105,7 @@
         </div>
         <div class="divRow">
             <div class="divColumn">
-                <asp:textbox id="IssueStatusTextBox" runat="server" text="Open" readonly="true" ontextchanged="IssueStatusTextBox_TextChanged"></asp:textbox>
+                <asp:textbox id="IssueStatusTextBox" runat="server" text="OPEN" readonly="true" ontextchanged="IssueStatusTextBox_TextChanged"></asp:textbox>
             </div>
         </div>
         <div class="divRow">

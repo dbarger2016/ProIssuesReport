@@ -38,11 +38,15 @@
 
     <p>GridView Data Display Test</p>
     <asp:GridView ID="ReportGridView" runat="server">
+        <Columns>
+            <asp:BoundField DataField="IssueId" HeaderText="Issue ID" SortExpression="IssueId" />
+        </Columns>
     </asp:GridView>
 
 
     <label id="lblFlagCount">Flag Count:</label>
 
     <asp:TextBox ID="FlagCountTextBox" runat="server" Width="25px"></asp:TextBox>
+
 
 </asp:Content>
